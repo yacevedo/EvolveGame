@@ -1,15 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
     <title>Evolution</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages. It's pretty cool.</p>
+    <div class="containerfluid" id="background">
+        <h3 id="live-area">
+        <span id="mutations">Mutations: <span id="show-mutations">0</span></span>
+        <br />
+        <button id="mutate-button" class="btn-warning" onclick="sellAll()">Induce Mutation</button>
 
+        <!--<a onclick="gainOre()" id="oreButton"></a>
+        <h4 id="opc" You will gain <span id="orePerClick">1</span> Ore per click!</h4>
+        -->
+        </h3>
+        <h3 id="stats">
+        <br />
+        <span id="population">Population: <span id="show-population">0</span></span>
+        <br />
+        <span id="rate-birth">Birth Rate: <span id="show-rate-birth">0</span></span>
+        <br />
+        <span id="life-span">Life Span: <span id="show-life-span">0</span></span>
+        <br />
+        <span id="rate-death">Death Rate: <span id="show-rate-death">0</span></span>
+        <br />
+        <span id="species-time">Species Time: <span id="show-species-time">0</span></span>
+        <br />
+        </h3>
+
+        <h3 id="stats2">
+            <span id="rate-birth">Increase Birth Rate: <span id="level-birth">0</span></span>
+            <br />
+            <span id="rate-death">Increase Life Span: <span id="level-life-span">0</span></span>
+            <br />
+            <span id="life-span">Decrease Death Rate: <span id="level-death">0</span></span>
+            <br />
+        </h3>
+        <br />
+        <div id="shop">
+            <button id="upgrade-birth" class="btn-success" onclick="upgradePick()">Increase Birth Rate: <span id="cost-birth">500</span> mutations</button> Increase birth rate by 1%
+            <br />
+            <button id="upgrade-life-span" class="btn-success" onclick="upgradePick()">Increase Life Span: <span id="cost-birth">600</span> mutations</button> Increase life span by 1%
+            <br />
+            <button id="upgrade-death" class="btn-success" onclick="upgradePick()">Decrease Death Rate: <span id="cost-birth">700</span> mutations</button> Derease death rate by 1%
+            <br />
+            <br />
+            <button id="evolve" class="btn-success" onclick="winGame()">Major evolution: 1000000 mutations</button>
+            <br />
+        </div>
+
+        <h3>
+         <br />
+            <span id="tot-species">Species Created: <span id="show-tot-species">0</span></span>
+            <br />
+            <span id="tot-mutations">Total Mutations: <span id="show-tot-mutations">0</span></span>
+            <br />
+            <span id="tot-time">Time Since Genesis: <span id="show-tot-time">0</span></span>
+            <br />
+            </h3>
+    </div>
     <script src="scripts/main.js"></script>
 </body>
 
